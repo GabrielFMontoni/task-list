@@ -13,7 +13,7 @@ Uma lista de tarefas para práticas de HTML, CSS e JS, com localStorage
 Este projeto foi realizado para práticas de LocalStorage com objetivo de ajudar você a organizar sua lista de tarefas.
 
 ## :file_folder: Acesso ao projeto
-
+https://task-list-plum.vercel.app/
 
 ## :hammer_and_wrench: Abrir e rodar o projeto
 Abra o arquivo "index.html" em seu navegador.
