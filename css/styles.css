@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.container{
+    width: 80%;
+    display: flex;
+    box-shadow: 1px 1px 10px 1px #000;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    font-family: 'Lato';
+    padding: .5rem 4rem 2rem 4rem;
+    height: 100%;
+    background-color: #fff;
+}
+.titulo__principal{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1b24a1;
+}
+.tarefas{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.diarias > h1, .semanais > h1, .mensais > h1{
+   
+    font-size: 2rem;
+}  
+.diarias > h1{
+    color: #53bcec;
+}
+.diarias__bg{
+    background-color: #53bcec;
+}
+.semanais > h1{
+    color: #35c748;
+}
+.semanais__bg{
+    background-color: #35c748;
+}
+.mensais > h1{
+    color: #ec6553;
+} 
+.mensais__bg{
+    background-color: #ec6553;
+}
+
+.sumir{
+    display: none;
+}
+input {
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #0000008a;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.add{
+    background-color: #53bcec;
+    padding: 17px;
+    border-radius: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: #525bdb;
+    transition: .3s;
+    box-shadow: 1px 1px 5px 1px #000;
+    color: #fff;
+}
+ul{
+    width: 100%;
+    padding: 0rem 0rem;
+    font-family: 'Lato ';
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.item{
+    list-style: none;
+    padding: .5rem .5rem;
+    margin:5px 0;
+    max-width: 300px;
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    "texto lixeira";
+    
+    border-radius: 10px;
+    grid-template-columns: 1fr auto;
+
+
+}
+.item:hover{
+    box-shadow: 1px 1px 5px 1px #000;
+    background-color: #888888;
+    cursor: pointer;
+}
+.lixeira{
+    color: #464545;
+    cursor: pointer;
+    grid-area: lixeira;
+}
+
+.finished{
+    color: #fff;
+    background-color: #000;
+    text-decoration:line-through;
+
+}
+.message{
+    font-size: 10px;
+    /* display: none; */
+    text-decoration: none ;
+}
+
+@media (max-width:720px) {
+    .container{
+        width:100%;
+        padding: 0;
+    }
+    .tarefas{
+        flex-direction: column;
+    }
+    ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{
+        min-width: 300px;
+        max-width: 300px;
+
+    }
+}
